@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaction Booker</title>
+</head>
+
+<body>
+    <form id="main-form" action="/submit" method="post">
+
+        <fieldset>
+          <div class="banner">
+            <h1>Book Your Dream Vacation</h1>
+          </div>
+          <label>Destination
+            <select id="location" name="'location">
+              <option value="none">Choose a Destination</option>
+              <option value="la">Los Angeles, US</option>
+              <option value="nyc">New York City, US</option>
+              <option value="ks">Kingston, Jamaica</option>
+              <option value="rio">Rio de Janerio, Brazil</option>
+              <option value="ba">Buenos Aires, Argentina</option>
+            </select>
+          </label>
+          <div>
+            <label for="date">Depature Date</label>
+            <input type="date" id='date' name="date">
+            <label for="num">Number of Travelers</label>
+            <input type="number" id='trav' name="trav" >
+          </div>
+          <button type="submit">Find My Vacation</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

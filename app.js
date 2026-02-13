@@ -6,7 +6,7 @@ const PORT=3001;
 app.use(express.static('public'))
 
 app.get('/', (req,res)=>{
-    res.send('test')
+    res.sendFile(`${import.meta.dirname}/views/index.html`)
 })
 
 app.listen(PORT, ()=>{
