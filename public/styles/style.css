@@ -1,0 +1,98 @@
+body {
+    background-color: blue;
+}
+
+#main-form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=400&fit=crop);
+    height: 14rem;
+    border-radius: 25px 25px 0px 0px;
+    margin-bottom: 4rem;
+}
+
+#banner h1 {
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 4rem;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.format {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+
+select {
+    height: 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-size: 1.2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+input {
+    height: 2rem;
+    font-size: 1.2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+}
+
+.bottom-format {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.bottom-format input {
+    width: 80%;
+}
+
+button {
+    background-color: rgb(5, 42, 251);
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 25px;
+    height: 3rem;
+    width: 30%;
+    border: none;
+    margin-bottom: 4rem;
+}
+
+#btn-div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
