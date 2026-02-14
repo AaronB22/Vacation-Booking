@@ -84,7 +84,9 @@ input {
     color: red;
 }
 footer{
-    margin-top: 70px;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
     text-align: center;
     background-color: whitesmoke;
     height: 50px;
