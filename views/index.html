@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/style.css">
+  <script src="/js/script.js" defer></script>
   <title>Vaction Booker</title>
 </head>
 
 <body>
-    <form id="main-form" action="/submit" method="post">
+    <form id="mainform"  method="get">
 
         <fieldset>
           <div id="banner">
@@ -17,8 +18,8 @@
           </div>
           <div class="format">
 
-              <label for="location">Destination</label>
-            <select id="location" name="'location">
+              <label for="location">Destination <span class='err' id="derr">You must choose a destination!</span></label>
+            <select id="location" name="location">
               <option value="none">Choose a Destination</option>
               <option value="la">Los Angeles, US</option>
               <option value="nyc">New York City, US</option>
@@ -28,8 +29,8 @@
             </select>
           </div>
           <div class="bottom-format">
-              <label for="date" id="depdate">Depature Date</label>
-              <label for="num" id="numtrav">Number of Travelers</label>
+              <label for="date" id="depdate">Depature Date <span class='err' id="daerr">You must choose a date!</span></label>
+              <label for="num" id="numtrav">Number of Travelers <span class='err' id="nerr">You must choose amount of travelers!</span></label>
             <input type="date" id='date' name="date">
             <input type="number" id='trav' name="trav" >
           </div>
@@ -38,6 +39,9 @@
           </div>
         </fieldset>
     </form>
+    <footer>
+        <p>Github Repository: <a href="https://github.com/AaronB22/Vacation-Booking">https://github.com/AaronB22/Vacation-Booking</a></p>
+    </footer>
 </body>
 
 </html>
