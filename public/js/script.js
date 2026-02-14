@@ -12,16 +12,18 @@ function validate(){
         document.getElementById('derr').style.display='block'
         isValid=false;
     }
-    if (!date) {
+    const dateCheck = new Date(date);
+    if (!date || dateCheck<new Date()) {
         isValid = false;
         document.getElementById('daerr').style.display ='block'
     }
+
     if (!trav) {
         document.getElementById('nerr').style.display = 'block'
         isValid = false;
     }
 
-    return false;
+    return isValid;
 
 }
 

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form id="mainform"  method="get">
+    <form id="mainform"  action='/submit' method="get">
 
         <fieldset>
           <div id="banner">
@@ -29,7 +29,7 @@
             </select>
           </div>
           <div class="bottom-format">
-              <label for="date" id="depdate">Depature Date <span class='err' id="daerr">You must choose a date!</span></label>
+              <label for="date" id="depdate">Depature Date <span class='err' id="daerr">You must choose a valide date!</span></label>
               <label for="num" id="numtrav">Number of Travelers <span class='err' id="nerr">You must choose amount of travelers!</span></label>
             <input type="date" id='date' name="date">
             <input type="number" id='trav' name="trav" >
