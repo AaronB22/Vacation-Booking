@@ -2,7 +2,6 @@ document.getElementById("mainform").onsubmit = validate;
 function validate(){
 
     clearErrors()
-    console.log('best')
     let isValid=true;
     let location = document.getElementById("location").value;
     let date= document.getElementById('date').value
@@ -20,6 +19,10 @@ function validate(){
 
     if (!trav) {
         document.getElementById('nerr').style.display = 'block'
+        isValid = false;
+    }
+    if(trav<=0&& trav){
+        document.getElementById('nberr').style.display = 'block'
         isValid = false;
     }
 
